@@ -8,6 +8,7 @@ public class Greeter {
     }
 
     public String getGreeting() {
-        return message;
+        Decorator decorator = new Decorator("<~~ ", " ~~>");
+        return decorator.decorate(message);
     }
 }
