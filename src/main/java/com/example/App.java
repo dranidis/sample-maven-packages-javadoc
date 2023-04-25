@@ -1,11 +1,14 @@
 package com.example;
 
+import com.example.messages.Greeter;
+
 /**
  * Hello world!
  *
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Greeter greeter = new Greeter("Hello, world!");
+        System.out.println(greeter.getGreeting());
     }
 }
