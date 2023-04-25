@@ -1,5 +1,6 @@
 package com.example;
 
+import com.example.messages.Decorator;
 import com.example.messages.Greeter;
 
 /**
@@ -8,7 +9,8 @@ import com.example.messages.Greeter;
  */
 public class App {
     public static void main(String[] args) {
-        Greeter greeter = new Greeter("Hello, world!");
+        Decorator decorator = new Decorator("<~~ ", " ~~>");
+        Greeter greeter = new Greeter(decorator, "Hello, world!");
         System.out.println(greeter.getGreeting());
     }
 }

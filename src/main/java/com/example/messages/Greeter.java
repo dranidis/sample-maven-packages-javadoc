@@ -2,13 +2,19 @@ package com.example.messages;
 
 public class Greeter {
     private String message;
+    private Decorator decorator;
 
-    public Greeter(String message) {
+    public Greeter(Decorator decorator, String message) {
+        this.decorator = decorator;
         this.message = message;
     }
 
+    /**
+     * Returns the message received at the constructor decorated by the decorator received at the constructor.
+     * 
+     * @return the decorated greeting
+     */
     public String getGreeting() {
-        Decorator decorator = new Decorator("<~~ ", " ~~>");
         return decorator.decorate(message);
     }
 }
