@@ -1,0 +1,8 @@
+# Compiled class files
+target/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
