@@ -4,11 +4,11 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-public class DecoratorTest {
+public class PrefixPostfixDecoratorTest {
 
     @Test
     public void testDecorate() {
-        Decorator decorator = new Decorator("[", "]");
+        PrefixPostfixDecorator decorator = new PrefixPostfixDecorator("[", "]");
         String actual = decorator.decorate("message");
         String expected = "[message]";
         assertEquals(expected, actual);
