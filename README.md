@@ -25,6 +25,11 @@ mvn test
 java -cp target/my-project-1.0-SNAPSHOT.jar com.example.App
 ```
 
+## Generate Javadoc
+```
+mvn javadoc:javadoc 
+```
+
 ## Clean (rm target directory)
 ```
 mvn clean
