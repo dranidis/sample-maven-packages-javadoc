@@ -29,6 +29,7 @@ java -cp target/my-project-1.0-SNAPSHOT.jar com.example.App
 ```
 mvn javadoc:javadoc 
 ```
+Site is generated in folder `target/site`. Open in the browser the file `index.html`.
 
 ## Clean (rm target directory)
 ```
